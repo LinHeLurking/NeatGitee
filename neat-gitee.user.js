@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Neat Gitee
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       LinHeLurking
 // @match        https://gitee.com/
@@ -36,7 +36,7 @@
             $("#event-timeline-app")[0].style.width = "980px";
             $(".rc-users__container")[0].style.marginLeft = "0";
 
-            settimeout(removePhoneBindNoti, 1000);
+            setTimeout(removePhoneBindNoti, 600);
 
         } else if (window.location.href.startsWith("https://gitee.com/notifications/")) {
             removeWechatBanner();
