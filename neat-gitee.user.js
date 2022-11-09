@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Neat Gitee
-// @version      0.3
-// @description  try to take over the world!
+// @version      0.4
+// @description  Clean your gitee!
 // @author       LinHeLurking
 // @match        https://gitee.com/
 // @match        https://gitee.com/*
