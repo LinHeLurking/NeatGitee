@@ -23,7 +23,7 @@
       }
     };
 
-    const clean = () => {
+    const clean = setTimeout(() => {
         if (window.location.href == "https://gitee.com/") {
             removeWechatBanner();
             removeIfPresent($(".recommend-container"));
@@ -63,11 +63,11 @@
         const discountBadge = $("sup");
         for(let index = 0; index < discountBadge.length; index++) {
             const element = discountBadge[index];
-            if(element && element.innerHTML == "特惠") {
+            if(element && element.innerText == "特惠") {
               element.remove();
             }
         }
-    };
+    }, 400);
 
     $("documnet").ready(clean);
 })();
