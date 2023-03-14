@@ -63,7 +63,7 @@
         const discountBadge = $("sup");
         for(let index = 0; index < discountBadge.length; index++) {
             const element = discountBadge[index];
-            if(element && element.innerText == "特惠") {
+            if(element) {
               element.remove();
             }
         }
